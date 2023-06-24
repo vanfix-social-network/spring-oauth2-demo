@@ -5,6 +5,8 @@
     <title>Index</title>
 </head>
 <body>
-  <h2>You successfully signed in.</h2>
+<h2>You successfully signed in.</h2>
+<br>
+<div th:if="${principal}" th:text="${principal.getUsername()}"></div>
 </body>
 </html>
